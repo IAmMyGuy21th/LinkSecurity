@@ -339,10 +339,10 @@
 <input id="inp" type="checkbox" name="one" onclick="input(false)">
 <input id="inp" type="checkbox" name="one" onclick="input(true)"><br>
 <script>
-let i;
+let i = 0;
 function input(thing) {
 let do = thing;
-if ((document.getElementById("inp").value) && thing) {
+if ((document.getElementById("inp").value) && thing && do) {
   do = false;
   i++;
 }
